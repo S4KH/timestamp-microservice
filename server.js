@@ -29,7 +29,7 @@ app.get('/:times', function(req, res){
     res.json(result)
 });
 
-var port = 8080;
+var port = process.env.PORT || 8081;
 app.listen(port,  function () {
 	console.log('Node.js listening on port ' + port + '...');
 });
